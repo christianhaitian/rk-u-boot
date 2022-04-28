@@ -12,7 +12,7 @@ CMD_ARGS=$1
 
 ########################################### User can modify #############################################
 # User's rkbin tool relative path
-RKBIN_TOOLS=../rkbin/tools
+RKBIN_TOOLS=./rkbin/tools
 
 # User's GCC toolchain and relative path
 ADDR2LINE_ARM32=arm-linux-gnueabihf-addr2line
@@ -24,7 +24,7 @@ NM_ARM64=aarch64-linux-gnu-nm
 GCC_ARM32=arm-linux-gnueabihf-
 GCC_ARM64=aarch64-linux-gnu-
 TOOLCHAIN_ARM32=../prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf/bin
-TOOLCHAIN_ARM64=../prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin
+TOOLCHAIN_ARM64=/opt/toolchains/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin
 
 ########################################### User not touch #############################################
 # Declare global INI file searching index name for every chip, update in select_chip_info()

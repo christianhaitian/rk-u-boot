@@ -1,4 +1,5 @@
 #!/bin/bash
+
 dd if=/dev/zero of=spi_image.img bs=1M count=0 seek=16
 /usr/sbin/parted -s spi_image.img mklabel gpt
 /usr/sbin/parted -s spi_image.img unit s mkpart idbloader 64 7167

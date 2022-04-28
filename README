@@ -5,6 +5,12 @@
 # SPDX-License-Identifier:	GPL-2.0+
 #
 
+Build:
+======
+git clone --recursive https://github.com/christianhaitian/rk-u-boot.git
+./make_uboot.sh
+
+
 Summary:
 ========
 
